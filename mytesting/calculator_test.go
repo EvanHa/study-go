@@ -1,7 +1,6 @@
-package calculator_test
+package calculator
 
 import (
-	"hellogo.com/testing"
 	"testing"
 )
 
@@ -23,7 +22,7 @@ func TestCalculateIsArmstrong(t *testing.T) {
 
 		for _, test := range tests {
 			t.Run(test.name, func(t *testing.T) {
-				actual := calculator.CalculateIsArmstrong(test.value)
+				actual := CalculateIsArmstrong(test.value)
 				if test.expected != actual {
 					t.Fail()
 				}
@@ -32,28 +31,3 @@ func TestCalculateIsArmstrong(t *testing.T) {
 	})
 }
 
-func TestNegativeCalculateIsArmstrong(t *testing.T) {
-	t.Run("should fail for case 350", func(t *testing.T){
-		testCase := TestCase{
-			value:    350,
-			expected: false,
-		}
-
-		testCase.actual = calculator.CalculateIsArmstrong(testCase.value)
-		if testCase.actual != testCase.expected {
-			t.Fail()
-		}
-	})
-
-	t.Run("should fail for case 300", func(t *testing.T){
-		testCase := TestCase{
-			value:    300,
-			expected: false,
-		}
-
-		testCase.actual = calculator.CalculateIsArmstrong(testCase.value)
-		if testCase.actual != testCase.expected {
-			t.Fail()
-		}
-	})
-}
