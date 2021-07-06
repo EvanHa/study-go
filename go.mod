@@ -2,7 +2,7 @@ module hellogo
 
 go 1.16
 
-require(
+require (
     hellogo.com/testing v0.0.0
 )
 
