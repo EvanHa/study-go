@@ -21,4 +21,7 @@ $ go test ./... -coverprofile=coverage.out
 $ go tool cover -html=coverage.out
 ```
 
-
+### Benchmarking go code
+```bash
+$ go test ./... -run=Benchmark -bench=.
+```
