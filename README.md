@@ -42,3 +42,10 @@ $ mockery --name=MessageService
 ```bash
 $ go test ./... --tags=integration -v
 ```
+
+### Testing for Race Conditions with -race
+```bash
+$ go build -race
+$ ./race
+```
+
