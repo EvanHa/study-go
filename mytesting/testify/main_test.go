@@ -1,4 +1,6 @@
+// +build unit
 // godoc.org/github.com/stretchr/testify/assert
+
 package main
 
 import (

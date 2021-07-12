@@ -36,4 +36,9 @@ $ golangci-lint run
 $ mockery --name=MessageService
 ```
 
-
+### Integration Test
+#### Build tags in Go
+##### insert `// +build integration` in test code
+```bash
+$ go test ./... --tags=integration -v
+```
