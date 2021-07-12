@@ -30,3 +30,10 @@ $ go test ./... -run=Benchmark -bench=.
 ```bash
 $ golangci-lint run
 ```
+
+### Generating Mocks with Mockery
+```bash
+$ mockery --name=MessageService
+```
+
+
