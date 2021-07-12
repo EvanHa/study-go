@@ -25,3 +25,8 @@ $ go tool cover -html=coverage.out
 ```bash
 $ go test ./... -run=Benchmark -bench=.
 ```
+
+### Linting and Formatting go code
+```bash
+$ golangci-lint run
+```
